@@ -1,2 +1,2 @@
 # ElunaScripts
- Eluna Scripts, That is ran on SPP-TBC
+ Eluna Scripts, That is runs on SPP-TBC
