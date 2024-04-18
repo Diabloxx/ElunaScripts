@@ -73,3 +73,34 @@ local function BoostCharacter(event, player, creature)
             player:LearnSpell(3456) -- Example spell ID for hunter spell
             player:LearnSpell(7890) -- Another example spell ID for hunter spell
             -- Add more spells for hunter here
+        elseif class == CLASS_SHAMAN then
+            player:LearnSpell(1234) -- Example spell ID for shaman spell
+            player:LearnSpell(5678) -- Another example spell ID for shaman spell
+            -- Add more spells for shaman here
+        elseif class == CLASS_PRIEST then
+            player:LearnSpell(9012) -- Example spell ID for priest spell
+            player:LearnSpell(3456) -- Another example spell ID for priest spell
+            -- Add more spells for priest here
+        elseif class == CLASS_WARLOCK then
+            player:LearnSpell(7890) -- Example spell ID for warlock spell
+            player:LearnSpell(1234) -- Another example spell ID for warlock spell
+            -- Add more spells for warlock here
+        elseif class == CLASS_PALADIN then
+            player:LearnSpell(5678) -- Example spell ID for paladin spell
+            player:LearnSpell(9012) -- Another example spell ID for paladin spell
+            -- Add more spells for paladin here
+        end
+        -- Add more class-specific spells here for other classes
+
+        -- Max the character's weapon skill
+        player:SetSkill(SKILL_WEAPON, 375) -- Replace 375 with the maximum weapon skill for your expansion
+
+        player:SendBroadcastMessage("Congratulations! Your character has been boosted to level 70.")
+    else
+        player:SendBroadcastMessage("You don't have the required token to boost your character.")
+    end
+
+    player:GossipComplete()
+end
+
+RegisterCreatureGossipEvent(NPC_ID, 1, BoostCharacter) -- Register gossip event for the boost NPC
