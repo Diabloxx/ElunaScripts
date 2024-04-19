@@ -21,15 +21,14 @@ local function BoostCharacter(event, player, creature)
 
         -- Give the character a specific set of gear
         -- Replace the item IDs with the desired gear for each class
-        local class = player:GetClass()
-        if class == CLASS_WARRIOR then
+		if class == CLASS_WARRIOR then
             player:AddItem(28224, 1) -- Wastewalker Helm
             player:AddItem(29349, 1) -- Adamantine Chain of the Unbroken
 			player:AddItem(27434, 1) -- Mantle of Perenolde
 			player:AddItem(27892, 1) -- Cloak of the Inciter
 			player:AddItem(28403, 1) -- Doomplate Chestguard
 			player:AddItem(29246, 1) -- Nightfall Wristguards
-			player:AddItem(23520, 1) -- Ragesteel Gloves
+			player:AddItem(25685, 1) -- fel-leather-gloves
 			player:AddItem(27985, 1) -- Deathforge Girdle
 			player:AddItem(30533, 1) -- Vanquisher's Legplates
 			player:AddItem(28176, 1) -- Sha'tari Wrought Greaves
@@ -40,25 +39,27 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(31332, 1) -- Blinkstrike
 			player:AddItem(27872, 1) -- The Harvester of Souls
 			player:AddItem(28397, 1) -- Emberhawk Crossbow
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for warrior gear here
         elseif class == CLASS_MAGE then
-            player:AddItem(28193, 1) -- Mana-Etched Crown
-            player:AddItem(28134, 1) -- Brooch of Heightened Potential
-			player:AddItem(27796, 1) -- Mana-Etched Spaulders
-			player:AddItem(27981, 1) -- Sethekk Oracle Cloak
-			player:AddItem(29341, 1) -- Auchenai Anchorite's Robe
-			player:AddItem(27462, 1) -- Crimson Bracers of Gloom
-			player:AddItem(24450, 1) -- Manaspark Gloves
-			player:AddItem(27843, 1) -- Glyph-Lined Sash
-			player:AddItem(30531, 1) -- Breeches of the Occultist
-			player:AddItem(28406, 1) -- Sigil-Laced Boots
-			player:AddItem(28227, 1) -- Sparking Arcanite Ring
-			player:AddItem(31290, 1) -- Band of Dominion
-			player:AddItem(29132, 1) -- Scryer's Bloodgem
-			player:AddItem(27683, 1) -- Quagmirran's Eye
-			player:AddItem(27905, 1) -- Greatsword of Horrid Dreams
-			player:AddItem(28412, 1) -- Lamp of Peaceful Radiance
-			player:AddItem(29350, 1) -- The Black Stalk
+            player:AddItem(28193, 1) 	-- Mana-Etched Crown
+            player:AddItem(28134, 1) 	-- Brooch of Heightened Potential
+			player:AddItem(27796, 1) 	-- 	Mana-Etched Spaulders
+			player:AddItem(27981, 1) 	-- Sethekk Oracle Cloak
+			player:AddItem(29341, 1) 	-- Auchenai Anchorite's Robe
+			player:AddItem(27462, 1) 	-- Crimson Bracers of Gloom
+			player:AddItem(24450, 1) 	-- Manaspark Gloves
+			player:AddItem(27843, 1) 	-- Glyph-Lined Sash
+			player:AddItem(30531, 1) 	-- Breeches of the Occultist
+			player:AddItem(28406, 1) 	-- Sigil-Laced Boots
+			player:AddItem(28227, 1) 	-- Sparking Arcanite Ring
+			player:AddItem(31290, 1) 	-- Band of Dominion
+			player:AddItem(29370, 1) 	-- Icon of the Silver Crescent
+			player:AddItem(27683, 1) 	-- Quagmirran's Eye
+			player:AddItem(27905, 1) 	-- Greatsword of Horrid Dreams
+			player:AddItem(28412, 1) 	-- Lamp of Peaceful Radiance
+			player:AddItem(29350, 1) 	-- The Black Stalk
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for mage gear here
         elseif class == CLASS_ROGUE then
             player:AddItem(28224, 1) -- Wastewalker Helm
@@ -75,9 +76,10 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(30860, 1) -- Kaylaan's Signet
 			player:AddItem(28288, 1) -- Abacus of Violent Odds
 			player:AddItem(28121, 1) -- Icon of Unyielding Courage
-			player:AddItem(29124, 1) -- Vindicator's Brand
+			player:AddItem(34895, 1) -- Scryer's Blade of Focus
 			player:AddItem(28189, 1) -- Latro's Shifting Sword
 			player:AddItem(27526, 1) -- Skyfire Hawk-Bow
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for rogue gear here
         elseif class == CLASS_DRUID then
             player:AddItem(8345, 1) -- Wolfshead Helm
@@ -96,6 +98,7 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(28288, 1) -- Abacus of Violent Odds
 			player:AddItem(29359, 1) -- Feral Staff of Lashing
 			player:AddItem(32387, 1) -- Idol of the Raven Goddess
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for druid gear here
         elseif class == CLASS_HUNTER then
             player:AddItem(28275, 1) -- Beast Lord Helm
@@ -115,6 +118,7 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(27846, 1) -- Claw of the Watcher
 			player:AddItem(28315, 1) -- Stormreaver Warblades
 			player:AddItem(29351, 1) -- Wrathtide Longbow
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for hunter gear here
         elseif class == CLASS_SHAMAN then
             player:AddItem(28758, 1) -- Exorcist's Mail Helm
@@ -130,9 +134,10 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(32779, 1) -- Band of Frigid Elements
 			player:AddItem(31290, 1) -- Band of Dominion
 			player:AddItem(27683, 1) -- Quagmirran's Eye
-			player:AddItem(29132, 1) -- Scryer's Bloodgem
+			player:AddItem(29383, 1) -- Bloodlust Brooch
 			player:AddItem(29355, 1) -- Terokk's Shadowstaff
 			player:AddItem(28248, 1) -- Totem of the Void
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for shaman gear here
         elseif class == CLASS_PRIEST then
             player:AddItem(31104, 1) -- Evoker's Helmet of Second Sight
@@ -152,6 +157,7 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(27543, 1) -- Starlight Dagger
 			player:AddItem(28412, 1) -- Lamp of Peaceful Radiance
 			player:AddItem(29350, 1) -- The Black Stalk
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for priest gear here
         elseif class == CLASS_WARLOCK then
             player:AddItem(28193, 1) -- Mana-Etched Crown
@@ -167,16 +173,17 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(28555, 1) -- Seal of the Exorcist
 			player:AddItem(28227, 1) -- Sparking Arcanite Ring
 			player:AddItem(27683, 1) -- Quagmirran's Eye
-			player:AddItem(29132, 1) -- Scryer's Bloodgem
+			player:AddItem(29370, 1) -- Icon of the Silver Crescent
 			player:AddItem(29355, 1) -- Terokk's Shadowstaff
 			player:AddItem(28386, 1) -- Nether Core's Control Rod
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for warlock gear here
         elseif class == CLASS_PALADIN then
             player:AddItem(28182, 1) -- Helm of the Claw
             player:AddItem(27779, 1) -- Bone Chain Necklace
-			player:AddItem(33173, 1) -- Ragesteel Shoulders
+			player:AddItem(27771, 1) -- Doomplate Shoulderguard
 			player:AddItem(24259, 1) -- Vengeance Wrap
-			player:AddItem(23522, 1) -- Ragesteel Breastplate
+			player:AddItem(28403, 1) -- Doomplate Chestguard
 			player:AddItem(23537, 1) -- Black Felsteel Bracers
 			player:AddItem(29509, 1) -- Windstrike Gloves
 			player:AddItem(27985, 1) -- Deathforge Girdle
@@ -186,8 +193,9 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(30365, 1) -- Overseer's Signet
 			player:AddItem(28288, 1) -- Abacus of Violent Odds
 			player:AddItem(28041, 1) -- Bladefist's Breadth
-			player:AddItem(28429, 1) -- Lionheart Champion
+			player:AddItem(29356, 1) -- Quantum Blade
 			player:AddItem(27484, 1) -- Libram of Avengement
+			player:Additem(7, 1), -- Gold Token for 5000 Gold
             -- Add more items for paladin gear here
         end
         -- Add more class-specific gear here for other classes
@@ -203,17 +211,16 @@ local function BoostCharacter(event, player, creature)
             player:LearnSpell(20252) -- Intercept
 			player:LearnSpell(201) -- Swords
 			player:LearnSpell(264) -- Bows
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+			player:LearnSpell(5011) -- Crossbows
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_MAGE then
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_ROGUE then
             player:LearnSpell(1787) -- Stealth
 			player:LearnSpell(201) -- Swords
 			player:LearnSpell(264) -- Bows
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+			player:LearnSpell(5011) -- Crossbows
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_DRUID then
             player:LearnSpell(5487) -- Bear Form
             player:LearnSpell(99) -- Demoralizing Roar
@@ -224,8 +231,7 @@ local function BoostCharacter(event, player, creature)
             player:LearnSpell(768) -- Cat Form
             player:LearnSpell(1066) -- Aquatic Form
             player:LearnSpell(33943) -- Flight Form
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_HUNTER then
 			player:LearnSpell(8737) -- Mail Armor
             player:LearnSpell(883) -- Call Pet
@@ -235,8 +241,8 @@ local function BoostCharacter(event, player, creature)
             player:LearnSpell(136) -- Mend Pet
 			player:LearnSpell(201) -- Swords
 			player:LearnSpell(264) -- Bows
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+			player:LearnSpell(5011) -- Crossbows
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_SHAMAN then
 			player:LearnSpell(8737) -- Mail Armor
             player:Additem(5175) -- Earth Totem
@@ -246,25 +252,21 @@ local function BoostCharacter(event, player, creature)
             player:AddItem(5177) -- Water Totem
             player:LearnSpell(5394) -- Healing Stream Totem
             player:AddItem(5178) -- Air Totem
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_PRIEST then
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_WARLOCK then
             player:LearnSpell(688) -- Summon Imp
             player:LearnSpell(697) -- Summon Voidwalker
             player:LearnSpell(712) -- Summon Succubus
             player:LearnSpell(691) -- Summon Felhunter
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+            player:LearnSpell(46149) -- Teleport: Shattrath
         elseif class == CLASS_PALADIN then
 			player:LearnSpell(750) -- Plate Armor
             player:LearnSpell(7328) -- Redemption
             player:LearnSpell(34769) -- Summon Warhorse (Bloodelf Style)
             player:LearnSpell(34767) -- Summon Charger (Bloodelf Style)
-            player:CastSpell(46149) -- Teleport: Shattrath
-            Player:ModifyMoney(50000000) -- 5000 Gold
+            player:LearnSpell(46149) -- Teleport: Shattrath
         end
 
         -- Max the character's weapon skill
