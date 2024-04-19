@@ -216,10 +216,12 @@ local function BoostCharacter(event, player, creature)
 			player:LearnSpell(5011) -- Crossbows
 			player:LearnSpell(1180) -- Daggers
             player:LearnSpell(46149) -- Teleport: Shattrath
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_MAGE then
             player:LearnSpell(46149) -- Teleport: Shattrath
 			player:LearnSpell(201) -- Swords
 			player:LearnSpell(1180) -- Daggers
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_ROGUE then
             player:LearnSpell(1787) -- Stealth
 			player:LearnSpell(674) -- Dual Wield
@@ -227,6 +229,7 @@ local function BoostCharacter(event, player, creature)
 			player:LearnSpell(264) -- Bows
 			player:LearnSpell(5011) -- Crossbows
             player:LearnSpell(46149) -- Teleport: Shattrath
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_DRUID then
             player:LearnSpell(5487) -- Bear Form
             player:LearnSpell(99) -- Demoralizing Roar
@@ -239,6 +242,7 @@ local function BoostCharacter(event, player, creature)
             player:LearnSpell(33943) -- Flight Form
             player:LearnSpell(46149) -- Teleport: Shattrath
 			player:LearnSpell(1180) -- Daggers
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_HUNTER then
 			player:LearnSpell(8737) -- Mail Armor
             player:LearnSpell(883) -- Call Pet
@@ -252,6 +256,7 @@ local function BoostCharacter(event, player, creature)
 			player:LearnSpell(5011) -- Crossbows
 			player:LearnSpell(15590) -- Fist Weapons
             player:LearnSpell(46149) -- Teleport: Shattrath
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_SHAMAN then
 			player:LearnSpell(8737) -- Mail Armor
             player:Additem(5175) -- Earth Totem
@@ -263,9 +268,11 @@ local function BoostCharacter(event, player, creature)
             player:AddItem(5178) -- Air Totem
             player:LearnSpell(46149) -- Teleport: Shattrath
 			player:LearnSpell(1180) -- Daggers
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_PRIEST then
             player:LearnSpell(46149) -- Teleport: Shattrath
 			player:LearnSpell(1180) -- Daggers
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_WARLOCK then
             player:LearnSpell(688) -- Summon Imp
             player:LearnSpell(697) -- Summon Voidwalker
@@ -275,6 +282,7 @@ local function BoostCharacter(event, player, creature)
 			player:LearnSpell(1180) -- Daggers
 			player:LearnSpell(201) -- Swords
 			player:LearnSpell(227) -- Staves
+			player:LearnSpell(33391) -- Ground Mount 100%
         elseif class == CLASS_PALADIN then
 			player:LearnSpell(750) -- Plate Armor
             player:LearnSpell(7328) -- Redemption
