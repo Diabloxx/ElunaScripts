@@ -1,3 +1,5 @@
+-- AUTHOR: Diabloxx (Valleriaa)
+
 local NPC_ID = 40000 -- Replace with the NPC ID of your boost NPC
 local TOKEN_ITEM_ID = 17 -- Replace with the item ID of the token required for boosting
 
