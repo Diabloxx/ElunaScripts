@@ -40,9 +40,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(31332, 1) -- Blinkstrike
 			player:AddItem(27872, 1) -- The Harvester of Souls
 			player:AddItem(28397, 1) -- Emberhawk Crossbow
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
             -- Add more items for warrior gear here
         elseif class == CLASS_MAGE then
             player:AddItem(28193, 1) -- Mana-Etched Crown
@@ -62,9 +59,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(27905, 1) -- Greatsword of Horrid Dreams
 			player:AddItem(28412, 1) -- Lamp of Peaceful Radiance
 			player:AddItem(29350, 1) -- The Black Stalk
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
             -- Add more items for mage gear here
         elseif class == CLASS_ROGUE then
             player:AddItem(28224, 1) -- Wastewalker Helm
@@ -84,9 +78,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(29124, 1) -- Vindicator's Brand
 			player:AddItem(28189, 1) -- Latro's Shifting Sword
 			player:AddItem(27526, 1) -- Skyfire Hawk-Bow
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
             -- Add more items for rogue gear here
         elseif class == CLASS_DRUID then
             player:AddItem(8345, 1) -- Wolfshead Helm
@@ -105,9 +96,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(28288, 1) -- Abacus of Violent Odds
 			player:AddItem(29359, 1) -- Feral Staff of Lashing
 			player:AddItem(32387, 1) -- Idol of the Raven Goddess
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
             -- Add more items for druid gear here
         elseif class == CLASS_HUNTER then
             player:AddItem(28275, 1) -- Beast Lord Helm
@@ -127,9 +115,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(27846, 1) -- Claw of the Watcher
 			player:AddItem(28315, 1) -- Stormreaver Warblades
 			player:AddItem(29351, 1) -- Wrathtide Longbow
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(34105, 1) -- Quiver of a Thousand Feathers
             -- Add more items for hunter gear here
         elseif class == CLASS_SHAMAN then
             player:AddItem(28758, 1) -- Exorcist's Mail Helm
@@ -148,9 +133,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(29132, 1) -- Scryer's Bloodgem
 			player:AddItem(29355, 1) -- Terokk's Shadowstaff
 			player:AddItem(28248, 1) -- Totem of the Void
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
             -- Add more items for shaman gear here
         elseif class == CLASS_PRIEST then
             player:AddItem(31104, 1) -- Evoker's Helmet of Second Sight
@@ -170,9 +152,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(27543, 1) -- Starlight Dagger
 			player:AddItem(28412, 1) -- Lamp of Peaceful Radiance
 			player:AddItem(29350, 1) -- The Black Stalk
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
             -- Add more items for priest gear here
         elseif class == CLASS_WARLOCK then
             player:AddItem(28193, 1) -- Mana-Etched Crown
@@ -191,10 +170,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(29132, 1) -- Scryer's Bloodgem
 			player:AddItem(29355, 1) -- Terokk's Shadowstaff
 			player:AddItem(28386, 1) -- Nether Core's Control Rod
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21872, 1) -- Ebon Shadowbag
             -- Add more items for warlock gear here
         elseif class == CLASS_PALADIN then
             player:AddItem(28182, 1) -- Helm of the Claw
@@ -213,8 +188,6 @@ local function BoostCharacter(event, player, creature)
 			player:AddItem(28041, 1) -- Bladefist's Breadth
 			player:AddItem(28429, 1) -- Lionheart Champion
 			player:AddItem(27484, 1) -- Libram of Avengement
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
-			player:Additem(21876, 1) -- Primal Mooncloth Bag
             -- Add more items for paladin gear here
         end
         -- Add more class-specific gear here for other classes
